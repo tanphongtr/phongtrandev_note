@@ -8,3 +8,20 @@
 
 ## Full official image (eg: python:3.8.3, node:14.1.1)
 > Image này dung lượng lớn, vì các package đầy đủ, thích hợp cho deploy nhanh chóng không cần quan tâm đến những thành phần khác. Tương đối an toàn
+
+# Dockerfile reference
+> https://docs.docker.com/engine/reference/builder/
+
+## RUN
+
+## CMD
+
+## ENTRYPOINT
+
+## COPY
+
+## ADD
+
+## EXPOSE
+
+## ARG
