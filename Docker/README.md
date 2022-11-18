@@ -21,8 +21,9 @@ Sau khi hoàn tất, truy cập http://localhost:9000 để vào portainer
 > https://docs.docker.com/engine/reference/commandline/cli/
 
 ```bash
-# Build and Deploy
+# Build and Deploy with other docker compose file
 $ docker compose -f <docker-compose-file.yml> up -d --build
+$ docker compose up -d --build
 
 # Copy a local file into container
 $ docker cp ./some_file CONTAINER:/work
