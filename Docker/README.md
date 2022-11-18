@@ -22,16 +22,16 @@ Sau khi hoàn tất, truy cập http://localhost:9000 để vào portainer
 
 ```bash
 # Build and Deploy
-docker compose -f <docker-compose-file.yml> up -d --build
+$ docker compose -f <docker-compose-file.yml> up -d --build
 
 # Copy a local file into container
-docker cp ./some_file CONTAINER:/work
+$ docker cp ./some_file CONTAINER:/work
 
 # Copy files from container to local path
-docker cp CONTAINER:/var/logs/ /tmp/app_logs
+$ docker cp CONTAINER:/var/logs/ /tmp/app_logs
 
 # List containers
-docker ps
+$ docker ps
 
 CONTAINER ID   IMAGE                                     COMMAND                  CREATED        STATUS        PORTS                                        NAMES
 24cf12524d33   91d39187d206                              "python manage.py ru…"   23 hours ago   Up 23 hours   0.0.0.0:8540->8000/tcp                       app
