@@ -3,8 +3,6 @@
 ## Conditional View Processing
 https://docs.djangoproject.com/en/4.1/topics/conditional-view-processing/
 
-
-
 ```py
 from django.views.decorators.http import condition, last_modified
 from django.contrib.auth import get_user_model
