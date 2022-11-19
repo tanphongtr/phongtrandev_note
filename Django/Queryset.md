@@ -11,4 +11,4 @@ test = model_list.all() \
     ).exclude(invoices__gifts__gift__code__isnull=True)
 ```
 
-![image](https://user-images.githubusercontent.com/11567406/202834643-5109eeed-0ee3-42fa-96ad-d3a3fd8e65b5.png)
+<img width="234" alt="image" src="https://user-images.githubusercontent.com/11567406/202834719-0d6b8699-b27f-47cb-b669-458d49b90812.png">
