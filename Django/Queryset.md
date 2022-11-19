@@ -4,7 +4,7 @@
 
 ```python
 test = model_list.all() \
-    .values('invoices__gifts__gift__code') \
+    .values('invoices__gifts__gift__code') \ # Group by
     .order_by('invoices__gifts__gift__code') \
     .annotate(
         count=Sum('invoices__gifts__quantity'),
