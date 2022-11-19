@@ -2,7 +2,7 @@
 
 ## annotate()
 
-```
+```python
 test = model_list.all() \
     .values('invoices__gifts__gift__code') \
     .order_by('invoices__gifts__gift__code') \
