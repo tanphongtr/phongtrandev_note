@@ -1,4 +1,4 @@
-# Single Sign On
+# Single sign-on
 Có 2 giao thức phổ biến cho quy trình xác thực SSO
 ### SAML
 https://github.com/onelogin
