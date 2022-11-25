@@ -29,7 +29,22 @@ $ jupyter notebook
 
 ```
 
-### time in jupyter/ipython
+### Time in jupyter/ipython
 ```
 %%time
 ```
+![image](https://user-images.githubusercontent.com/11567406/203929196-90376b6e-44a8-4c46-be07-03aa1fcbf6bb.png)
+
+
+### Virtual environment
+```
+python3 -m venv virtual_env
+```
+
+```
+source /Users/phongtran/Repositories/Python/virtual_env/bin/activate
+```
+
+Using in VSCode:
+```/Users/phongtran/Repositories/Python/virtual_env/bin/python```
+![image](https://user-images.githubusercontent.com/11567406/203928328-a54853d8-2443-449b-9750-42824077a9cb.png)
