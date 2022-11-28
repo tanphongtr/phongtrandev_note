@@ -41,3 +41,7 @@ class AppNameConfig(AppConfig):
 # replace app_name in INSTALLED_APPS to app_name.apps.AppNameConfig
 
 ```
+
+https://stackoverflow.com/questions/59435187/django-signals-not-working-when-placed-outside-models-py
+
+https://stackoverflow.com/questions/37429726/overriding-appconfig-ready
