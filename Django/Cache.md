@@ -24,4 +24,9 @@ def index(request):
     return HttpResponse(f'{date} - {request.user}')
 ```
 
-Lợi ích của việc dùng condition (hoặc last_modified) là khi record được cập nhật, hoặc thêm mới (khi deleted không được) giá trị field datetime thay đổi sẽ load lại cache.
+Lợi ích của việc dùng condition (hoặc last_modified) là khi record được cập nhật, hoặc thêm mới giá trị field datetime thay đổi sẽ load lại cache.
+
+Lưu ý:
+- condition, last_modified chỉ hoạt động khi thêm mới hoạt cập nhật, không hoạt động khi deleted 
+- last_modified sẽ không hoạt động nếu dùng cache_page
+- View Response sẽ trả về trạng thái 304 Not Modified
