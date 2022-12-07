@@ -1,3 +1,7 @@
+# Admin
+
+## admin.ModelAdmin
+
 ```py
 # admin/model_admin.py
 
