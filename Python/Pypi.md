@@ -4,7 +4,7 @@ To upload a package to PyPI (the Python Package Index), you will first need to c
 
 2. Install the twine package using pip: `pip install twine`.
 
-3. In the root directory of your package, run the following command to build your package and generate a dist directory containing the built package files:
+3. In the root directory of your package, run the following command to build your package and generate a `dist` directory containing the built package files:
 ```
 python setup.py sdist bdist_wheel
 ```
