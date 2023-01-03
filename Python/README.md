@@ -48,3 +48,23 @@ source /Users/phongtran/Repositories/Python/virtual_env/bin/activate
 Using in VSCode:
 ```/Users/phongtran/Repositories/Python/virtual_env/bin/python```
 ![image](https://user-images.githubusercontent.com/11567406/203928328-a54853d8-2443-449b-9750-42824077a9cb.png)
+
+
+### Decorators
+
+
+```py
+
+# func này trả về wrap_f, nên lưu ý mọi param truyền từ @warp phải phụ thuộc vào wrap_f
+def warp(test):
+    print('this is wrap')
+    def wrap_f(test):
+        test()
+    return wrap_f
+
+@warp(
+    test='test'
+)
+def test():
+    print('this is test')
+```
