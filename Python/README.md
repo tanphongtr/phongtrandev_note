@@ -1,3 +1,6 @@
+List:
+- [decorators](#decorators).
+
 # pip
 ### Uninstall all packages
 
