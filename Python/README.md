@@ -71,3 +71,22 @@ def warp(test):
 def test():
     print('this is test')
 ```
+
+```py
+def as_string():
+    print("sdfsdf")
+
+    def inner(func):
+        print('inner', func)
+        return func
+
+    return inner
+
+
+@as_string()
+def number(a=3):
+    print('num', a)
+
+
+number(a=8)
+```
