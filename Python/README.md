@@ -1,6 +1,9 @@
 List:
 - [decorators](#decorators).
 
+# Python
+- [OOP in Python](https://voz.vn/t/object-oriented-programming-trong-python.693116/)
+
 # pip
 ### Uninstall all packages
 
