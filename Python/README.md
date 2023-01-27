@@ -93,3 +93,15 @@ def number(a=3):
 
 number(a=8)
 ```
+
+
+magic method:
+```py
+def __init__(self, name):
+    self.name = name
+
+def __str__(self):
+    return self.name
+
+def __repr__(self):
+    
