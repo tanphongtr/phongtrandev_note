@@ -114,4 +114,6 @@ def __repr__(self):
 
 https://realpython.com/python-gil/ (bản dịch: http://doanguyen.com/python-gil)
 
-# https://superfastpython.com/
+ - https://superfastpython.com/
+ - https://superfastpython.com/thread-vs-process/
+ - 
