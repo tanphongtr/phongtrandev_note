@@ -113,3 +113,5 @@ def __repr__(self):
 # Multithread
 
 https://realpython.com/python-gil/ (bản dịch: http://doanguyen.com/python-gil)
+
+# https://superfastpython.com/
