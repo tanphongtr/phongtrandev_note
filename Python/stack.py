@@ -14,20 +14,14 @@ class Stack:
         return self.items.pop()
 
     def peek(self):
+        # return first item in the list
         return self.items[len(self.items)-1]
 
     def size(self):
         return len(self.items)
 
 s = Stack()
-print(s.isEmpty())
-s.push(1)
-s.push('two')
+s.push('hello')
+s.push('true')
+
 print(s.peek())
-s.push(True)
-print(s.size())
-print(s.isEmpty())
-s.push(8.4)
-print(s.pop())
-print(s.pop())
-print(s.size())
