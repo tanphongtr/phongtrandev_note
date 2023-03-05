@@ -23,4 +23,4 @@ if __name__ == '__main__':
     s1 = SingletonClass()
     s2 = SingletonClass()
 
-    print(s1 == s2)
+    print(s1 is s2)
