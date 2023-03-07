@@ -1,6 +1,26 @@
-# Python
+# Object-oriented programming
+- [ ] Encapsulation
+- [ ] 
 
-- Decorator
+# Python
+- [ ] Decorator
+- [ ] Threading/Tasking
+- [ ] Async/Await
+- [ ] Abstract Base Classes (ABC)
+
+# JavaScript
+- [ ] Promise
+- [ ] Async/Await
+- [ ] Callback
+- [ ] Variable (var, let, const)
+- [ ] Set()
+- [ ] Maps()
+
+# C#
+
+# Data Structure
+- [ ] LinkedList
+- [ ] 
 
 
 # Pattern
