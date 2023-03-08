@@ -16,7 +16,7 @@ def sample_signal(sender, instance=None, created=False, **kwargs):
 ```
 
 
-
+> Cần khai báo signal ở models hoặc apps.py để register signal
 ```py
 # app_name/apps.py
 
@@ -40,6 +40,9 @@ class AppNameConfig(AppConfig):
 
 # replace app_name in INSTALLED_APPS to app_name.apps.AppNameConfig
 
+```
+
+# Read more
 ```
 
 https://stackoverflow.com/questions/59435187/django-signals-not-working-when-placed-outside-models-py
