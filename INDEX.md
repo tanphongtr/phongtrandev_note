@@ -62,8 +62,8 @@
 - [ ] Clean Architecture
 
 # Database
-- [ ] SQL
-- [ ] NoSQL
+- [ ] SQL (MySQL, PostgreSQL)
+- [ ] NoSQL (MongoDb)
 - [ ] ACID
 - [ ] Transaction
 - [ ] Index
