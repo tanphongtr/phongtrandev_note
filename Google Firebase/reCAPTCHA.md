@@ -1,3 +1,7 @@
+# reCAPTCHA
+
+> https://firebase.google.com/docs/app-check/web/recaptcha-provider?hl=vi
+
 Đoạn mã cho client
 
 ```js
