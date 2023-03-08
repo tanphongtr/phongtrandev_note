@@ -1,3 +1,6 @@
+# Variable
+
+```js
 // khai báo biến
 
 // var khai báo có phạm vi toàn cầu hoặc chức năng có phạm vi trong khi let và const có phạm vi khối.
@@ -25,3 +28,4 @@ function myFunction() {
   // const1 = 2; // lỗi
   // const const2; // lỗi
 }
+```
