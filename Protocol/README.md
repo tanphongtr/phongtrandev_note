@@ -22,3 +22,6 @@ VD: twitter sẽ luôn update số lượng comment, like, retweet
 ```json
 {"topic":"/tweet_engagement/1601616641158049792","payload":{"tweet_engagement":{"like_count":"2604"}}}
 ```
+
+
+# Web Socket
