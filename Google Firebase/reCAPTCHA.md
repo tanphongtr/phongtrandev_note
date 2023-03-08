@@ -2,6 +2,7 @@
 
 > https://firebase.google.com/docs/app-check/web/recaptcha-provider?hl=vi
 
+## Client
 Đoạn mã cho client
 
 ```js
@@ -17,16 +18,21 @@ grecaptcha.enterprise.ready(function() {
 </script>
 ```
 
+## Server
 
-```cURL
+### API
+```bash
 # Phía Server check token được tạo từ client
 curl --location --request POST 'https://www.google.com/recaptcha/api/siteverify?secret={SECRET}&response={TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "secret": "{SECRET}"
 }'
+```
 
-# Response
+### Response
+```json
+
 {
     "success": true,
     "challenge_ts": "2022-12-07T15:54:26Z",
