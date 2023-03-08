@@ -79,3 +79,9 @@
 - [ ] Load Balancer
 - [ ] SSL
 - [ ] Let's Encrypt (certbot)
+
+
+# ASP.NET Core
+- [ ] Middleware
+- [ ] Authentication
+- [ ] SQL Connection

@@ -294,3 +294,45 @@ public class ShapeDrawer
     }
 }
 ```
+
+
+# ACID SQL
+
+> Việc đảm bảo ACID cho các giao dịch trong cơ sở dữ liệu rất quan trọng để đảm bảo tính toàn vẹn và độ tin cậy của dữ liệu.
+
+## Atomicity (Tính nguyên tố)
+
+> A transaction is atomic if it is an indivisible and irreducible series of database operations such that either all occur, or nothing occurs.
+
+> Một giao dịch phải được thực thi hoặc không được thực thi hoàn toàn. Nếu một phần của giao dịch thất bại, thì tất cả các thay đổi được áp dụng bởi giao dịch đó sẽ bị hủy bỏ.
+
+```sql
+BEGIN TRANSACTION;
+UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
+UPDATE Orders SET OrderDate = '2018-01-18' WHERE CustomerID = 1;
+COMMIT;
+```
+
+## Consistency (Tính nhất quán)
+
+> A transaction is consistent if it brings the database from one valid state to another.
+
+> Một giao dịch phải đảm bảo rằng cơ sở dữ liệu nằm trong trạng thái hợp lệ trước và sau khi giao dịch được thực hiện. Ví dụ, nếu cơ sở dữ liệu yêu cầu một khóa duy nhất cho mỗi hàng trong bảng, thì giao dịch phải đảm bảo rằng không có hai hàng trùng lặp nào được chèn vào bảng trong cùng một thời điểm.
+
+
+## Isolation (Tính độc lập)
+
+> A transaction is isolated if the concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially, i.e., one after the other.
+
+> Mỗi giao dịch phải chạy trong một không gian độc lập, không ảnh hưởng đến các giao dịch khác đang chạy đồng thời trên cùng một cơ sở dữ liệu. Điều này đảm bảo rằng các thay đổi của một giao dịch sẽ không được xem trước hoặc ảnh hưởng bởi các giao dịch khác.
+
+
+## Durability (Tính bền vững)
+
+> A transaction is durable if once it has been committed, it will remain so, even in the event of power loss, crashes, or errors.
+
+> Một giao dịch đã hoàn tất sẽ được lưu trữ một cách an toàn và không thể bị mất hoặc hỏng trong trường hợp có lỗi hệ thống hoặc máy chủ bị sập.
+
+# SQL Injection
+
+> SQL Injection là một kỹ thuật tấn công cho phép hacker thực thi các câu lệnh SQL trên một website thông qua các input từ người dùng.
