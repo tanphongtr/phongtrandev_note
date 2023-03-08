@@ -5,7 +5,7 @@
 - [ ] Abstraction
 
 # Python
-- [ ] Decorator
+- [ ] [Decorator](./Python/decorator.py)
 - [ ] Multithreading
 - [ ] Multiprocessing
 - [ ] Async/Await
