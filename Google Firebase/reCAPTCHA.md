@@ -19,7 +19,7 @@ grecaptcha.enterprise.ready(function() {
 
 
 ```cURL
-# Check token được tạo từ client
+# Phía Server check token được tạo từ client
 curl --location --request POST 'https://www.google.com/recaptcha/api/siteverify?secret={SECRET}&response={TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
