@@ -77,7 +77,6 @@
 # Nginx
 - [ ] Reverse Proxy
 - [ ] Load Balancer
-- [ ] SSL
 - [ ] Let's Encrypt (certbot)
 
 
@@ -85,3 +84,12 @@
 - [ ] Middleware
 - [ ] Authentication
 - [ ] SQL Connection
+
+
+# Django
+- [ ] Signal
+- [ ] Django ORM
+- [ ] Serializer/ Deserializer
+- [ ] DRF
+- [ ] Gunicorn
+- [ ] Middleware
