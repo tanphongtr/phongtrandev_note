@@ -337,7 +337,7 @@ COMMIT;
 
 > SQL Injection là một kỹ thuật tấn công cho phép hacker thực thi các câu lệnh SQL trên một website thông qua các input từ người dùng.
 
-
+```
 // funtion get all properties of an object C#
 public static List<string> GetProperties(object obj)
 {
@@ -348,3 +348,4 @@ public static List<string> GetProperties(object obj)
     }
     return properties;
 }
+```
