@@ -1,3 +1,6 @@
+# Explain
+https://planetscale.com/blog/how-read-mysql-explains
+
 # Transaction
 ```sql
 START TRANSACTION;
