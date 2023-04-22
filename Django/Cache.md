@@ -30,3 +30,6 @@ Lưu ý:
 - condition, last_modified chỉ hoạt động khi thêm mới hoạt cập nhật, không hoạt động khi deleted 
 - last_modified sẽ không hoạt động nếu dùng cache_page
 - View Response sẽ trả về trạng thái 304 Not Modified
+
+
+https://testdriven.io/blog/django-low-level-cache/ : có sử dụng signal để clear cache khi có modify
