@@ -10,12 +10,16 @@ def task1():
     print("Task 1 assigned to thread: {}".format(threading.current_thread().name))
     print("ID of process running task 1: {}".format(os.getpid()))
     print('Task 1 sleeping for 2 seconds')
-    sleep(5)
+    for i in range(0, 1_000_000):
+        pass
+    # sleep(5)
 
 def task2():
     print("Task 2 assigned to thread: {}".format(threading.current_thread().name))
     print("ID of process running task 2: {}".format(os.getpid()))
-    sleep(8)
+    for i in range(0, 1_000_000):
+        pass
+    # sleep(8)
 
 
 if __name__ == "__main__":
