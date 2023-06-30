@@ -52,8 +52,12 @@
 
 ### PlayCover
 > https://playcover.io/  
-> https://decrypt.day/  
+> https://decrypt.day/
 
+# Development
+
+### Powerlevel10k
+> https://github.com/romkatv/powerlevel10k
 
 
 
