@@ -59,6 +59,19 @@
 ### Powerlevel10k
 > https://github.com/romkatv/powerlevel10k
 
+### Nodejs
+```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash```
+
+Downloading nvm from git to '/Users/phongtran/.nvm'
+
+```nvm install --lts```
+
+### Pyenv
+
+```
+brew update
+brew install pyenv
+```
 
 
 
