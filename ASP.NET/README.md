@@ -11,7 +11,6 @@ dotnet tool update -g dotnet-aspnet-codegenerator
 
 ```
 dotnet new list
-
 ```
 
 ```
