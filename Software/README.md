@@ -54,7 +54,7 @@
 > https://playcover.io/  
 > https://decrypt.day/
 
-### PlayCover
+### Clipy
 > https://github.com/Clipy/Clipy
 
 # Development
