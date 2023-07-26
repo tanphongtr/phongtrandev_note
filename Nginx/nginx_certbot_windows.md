@@ -4,8 +4,10 @@ Self host, mở port, ssl với nginx, certbot, Windows
 
 Truy cập Admin của Router: 192.168.1.1 admin/123456789
 Mở 2 Port:
-	⁃	80 -> 80 (port 80 của nginx)
-	⁃	443 -> 443 (port 443 của nginx cho ssl/https)
+```
+80 -> 80 (port 80 của nginx)
+443 -> 443 (port 443 của nginx cho ssl/https)
+```
 
 <img width="1505" alt="Pasted Graphic" src="https://github.com/tanphongtr/phongtrandev_note/assets/11567406/bda8f56e-76f3-49f2-af57-7cd70f6a4626">
 
