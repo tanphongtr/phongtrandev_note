@@ -24,4 +24,6 @@ dotnet new sln -n DotForm -o DotForm
 // thêm project vào solution
 dotnet sln add DotForm/DotForm.Web.csproj
 
+// xóa project khỏi solution
+dotnet sln remove DotForm.Web.csproj
 ```

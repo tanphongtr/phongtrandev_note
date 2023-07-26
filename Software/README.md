@@ -54,6 +54,9 @@
 > https://playcover.io/  
 > https://decrypt.day/
 
+### Clipy
+> https://github.com/Clipy/Clipy
+
 # Development
 
 ### Powerlevel10k
