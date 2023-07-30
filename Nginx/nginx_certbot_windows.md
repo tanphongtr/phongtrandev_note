@@ -14,14 +14,15 @@ Mở 2 Port:
 
 # Cài nginx trên Windows
 http://nginx.org/en/docs/windows.html
-nginx for Windows
+nginx for Windows. Tải file zip hoặc có thể cài bằng [chocoley](https://chocolatey.org/install)
 
 ![Pasted Graphic 1](https://github.com/tanphongtr/phongtrandev_note/assets/11567406/6457aa43-7fa8-4627-a7f6-c8b3d8392379)
 
 
 Folder conf chứa file cấu hình chính của nginx, trong Folder này tạo một Folder có tên sites-enabled để chứa các File config khác
 
-Mở conf/nginx.conf thêm dòng: ```include “C:/Users/…/nginx/conf/sites-enabled/*.conf";```
+Mở conf/nginx.conf thêm dòng: ```include "C:/Users/…/nginx/conf/sites-enabled/*.conf";```
+
 <img width="1089" alt="Pasted Graphic 2" src="https://github.com/tanphongtr/phongtrandev_note/assets/11567406/595f728b-088b-4072-b4a8-071c15a054da">
 
 # Cài certbot
@@ -29,7 +30,7 @@ Mở conf/nginx.conf thêm dòng: ```include “C:/Users/…/nginx/conf/sites-en
 https://certbot.eff.org/instructions?ws=other&os=windows
 Certbot Instructions | Certbot (eff.org)
 
-```https://github.com/certbot/certbot/releases/latest/download/certbot-beta-installer-win_amd64_signed.exe```
+https://github.com/certbot/certbot/releases/latest/download/certbot-beta-installer-win_amd64_signed.exe
 
 Theo hướng dẫn, sau khi cài đặt mở Terminal (CMD) với quyền Admin mới có thể chạy certbot
 
@@ -41,7 +42,7 @@ Mở file conf/nginx.conf, phần server, server_name, thêm tên domain cần a
 
 Đăng ký ssl cho domain ```certbot certonly --webroot -w C:\Users\q\Downloads\nginx\html```
 
-Tạo file ptn.phongtran.dev.conf trong nginx\conf\sites-enabled với nội dung
+Tạo file **ptn.phongtran.dev.conf** trong **nginx\conf\sites-enabled** với nội dung
 ```
 server {
   server_name ptn.phongtran.dev;
@@ -73,4 +74,4 @@ server {
 }
 ```
 
-Xoá server_name ptn.phongtran.dev ở nginx.conf, sau đó reload lại nginx
+Xoá ```server_name ptn.phongtran.dev``` ở **nginx.conf**, sau đó ```nginx -s reload```
