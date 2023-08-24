@@ -74,6 +74,18 @@ Downloading nvm from git to '/Users/phongtran/.nvm'
 ```
 brew update
 brew install pyenv
+
+// For zsh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+
+pyenv install 3.10
+pyenv global 3.10
+
+python3 --version
+> Python 3.10
+
 ```
 
 ### wrk
