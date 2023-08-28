@@ -38,3 +38,23 @@ Docker best practise to [Control and configure Docker with systemd](https://docs
 4. Restart docker:
 
         systemctl restart docker.service
+
+
+# Protect the Docker daemon socket
+https://docs.docker.com/engine/security/protect-access/
+
+```
+docker context create \
+    --docker host=ssh://docker-user@host1.example.com \
+    --description="Remote engine" \
+    my-remote-engine
+
+my-remote-engine
+Successfully created context "my-remote-engine"
+
+docker context ls
+
+docker context use my-remote-engine
+
+docker ps
+```
