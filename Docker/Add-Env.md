@@ -12,6 +12,9 @@ Truy cập Portainer config như hình (Máy client B)
 Chỉ 1 client connect tới 1 agent
 
 # API
+
+Official: https://docs.docker.com/config/daemon/remote-access/
+
 https://gist.github.com/tanphongtr/120b4a8ccb9f106d92db22725938aefe
 
 Enable TCP port 2375 for external connection to Docker
