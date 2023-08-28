@@ -1,4 +1,4 @@
-
+# Agent
 
 Cài đặt Portainer Agent trên docker host muốn add vào. (Máy nguồn A)
 
@@ -10,3 +10,6 @@ Truy cập Portainer config như hình (Máy client B)
 <img width="1506" alt="image" src="https://github.com/tanphongtr/phongtrandev_note/assets/11567406/2cefc379-915b-40d6-976b-7728fa1e3454">
 
 Chỉ 1 client connect tới 1 agent
+
+# API
+https://gist.github.com/tanphongtr/120b4a8ccb9f106d92db22725938aefe
