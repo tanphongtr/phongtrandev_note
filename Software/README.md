@@ -102,10 +102,9 @@ mitmweb
 
 // ssl
 sudo security add-trusted-cert -d -p ssl -p basic -k /Library/Keychains/System.keychain ~/.mitmproxy/mitmproxy-ca-cert.pem
-
+```
 ![image](https://github.com/tanphongtr/phongtrandev_note/assets/11567406/57a7df90-7a6d-49e6-b885-906cda1f963c)
 
-```
 
 
 # Ubuntu
