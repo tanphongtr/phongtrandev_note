@@ -92,7 +92,14 @@ python3 --version
 
 ### Nodejs Env
 
+### WireShark
 
+### mitmproxy
+```
+brew install mitmproxy
+
+mitmweb
+```
 
 
 # Ubuntu
