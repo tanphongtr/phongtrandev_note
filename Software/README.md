@@ -83,7 +83,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 pyenv install 3.10
 pyenv global 3.10
 
-// nếu install python version bị lỗi
+// nếu install python version bị lỗi https://github.com/pyenv/pyenv/wiki
 brew install openssl readline sqlite3 xz zlib tcl-tk
 
 python3 --version
