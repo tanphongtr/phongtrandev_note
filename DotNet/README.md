@@ -34,3 +34,8 @@ dotnet tool install -g Microsoft.dotnet-httprepl
 
 In ~/.zshrc write:
 export PATH="$HOME/.dotnet/tools:$PATH"
+
+# Uninstall
+https://learn.microsoft.com/en-us/dotnet/core/install/remove-runtime-sdk-versions?pivots=os-macos
+
+
