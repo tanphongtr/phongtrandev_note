@@ -5,7 +5,6 @@
 
 ### AppCleaner
 > https://freemacsoft.net/appcleaner/  
-![image](https://github.com/tanphongtr/phongtrandev_note/assets/11567406/3f6ef172-9591-4d09-8bbe-87592bbcc373)
 
 ### The Unarchiver
 > https://theunarchiver.com/
@@ -56,6 +55,9 @@
 
 ### Clipy
 > https://github.com/Clipy/Clipy
+
+### qBitTorrent
+> https://www.qbittorrent.org/download
 
 # Development
 
