@@ -14,3 +14,10 @@ https://github.com/simstudioai/sim
 ## n8n
 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.  
 https://github.com/n8n-io/n8n
+
+# Diagram
+## mermaid
+https://mermaid.live/
+
+## draw.io
+https://app.diagrams.net/
