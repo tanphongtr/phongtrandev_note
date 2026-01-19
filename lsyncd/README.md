@@ -2,7 +2,8 @@
 
 ```dnf install -y lsyncd```
 
-```ssh-keygen -t rsa
+```
+ssh-keygen -t rsa
 # Nhấn Enter liên tục để để mặc định
 
 ssh-copy-id root@<IP_SERVER_2>
