@@ -3,6 +3,10 @@ As of Red Hat 6.4, Red Hat and the clones have included the keepalived package i
 
 ```dnf install keepalived```
 
+```systemctl enable keepalived```
+
+```systemctl start keepalived```
+
 ## Installing on Debian
 Run the following to install the keepalived package and all the required dependencies using Debian’s APT package handling utility:
 
