@@ -91,9 +91,9 @@ EOF
         sleep 3
         
         # Xóa sạch mọi quyền (bao gồm cả SUPER nếu lỡ có) và chỉ cấp lại SELECT
-        mysql -e "REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'iptv'@'%';"
-        mysql -e "GRANT SELECT ON *.* TO 'iptv'@'%';"
-        mysql -e "FLUSH PRIVILEGES;"
+        # mysql -e "REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'iptv'@'%';"
+        # mysql -e "GRANT SELECT ON *.* TO 'iptv'@'%';"
+        # mysql -e "FLUSH PRIVILEGES;"
 
         echo "-----------------------------------------------"
         echo "KIỂM TRA TRẠNG THÁI REPLICATION:"
