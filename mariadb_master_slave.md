@@ -9,10 +9,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "==============================================="
-echo "    HỆ THỐNG CÀI ĐẶT MARIADB REPLICATION"
+echo "   HỆ THỐNG CÀI ĐẶT MARIADB REPLICATION"
 echo "==============================================="
-echo "1. Cấu hình máy MASTER"
-echo "2. Cấu hình máy SLAVE"
+echo "1. Cấu hình máy MASTER (192.168.88.151)"
+echo "2. Cấu hình máy SLAVE  (192.168.88.152)"
 echo "3. Thoát"
 read -p "Lựa chọn của bạn (1-3): " CHOICE
 
@@ -46,7 +46,7 @@ EOF
         mysql -e "CREATE USER IF NOT EXISTS 'replica'@'$SLAVE_IP' IDENTIFIED BY '$REPL_PW';"
         mysql -e "GRANT REPLICATION SLAVE ON *.* TO 'replica'@'$SLAVE_IP';"
         
-        # User IPTV: Không dùng ALL PRIVILEGES để tránh cấp quyền SUPER (lách được read_only)
+        # User IPTV (Sẽ tự đồng bộ sang Slave)
         mysql -e "CREATE USER IF NOT EXISTS 'iptv'@'%' IDENTIFIED BY '$IPTV_PW';"
         mysql -e "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER ON *.* TO 'iptv'@'%';"
         
@@ -74,7 +74,6 @@ EOF
 [mariadb]
 server-id = 2
 read_only = 1
-# Ngăn chặn ghi dữ liệu ngay cả với user có quyền ghi thông thường
 EOF
 
         echo "3. Khởi động lại dịch vụ..."
@@ -86,22 +85,10 @@ EOF
         mysql -e "CHANGE MASTER TO MASTER_HOST='$MASTER_IP', MASTER_USER='replica', MASTER_PASSWORD='$MASTER_PW', MASTER_LOG_FILE='$LOG_FILE', MASTER_LOG_POS=$LOG_POS;"
         mysql -e "START SLAVE;"
 
-        echo "5. Thu hồi quyền và cấu hình SELECT ONLY cho user 'iptv'..."
-        # Đợi đồng bộ user từ Master sang
-        sleep 3
-        
-        # Xóa sạch mọi quyền (bao gồm cả SUPER nếu lỡ có) và chỉ cấp lại SELECT
-        # mysql -e "REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'iptv'@'%';"
-        # mysql -e "GRANT SELECT ON *.* TO 'iptv'@'%';"
-        # mysql -e "FLUSH PRIVILEGES;"
-
         echo "-----------------------------------------------"
-        echo "KIỂM TRA TRẠNG THÁI REPLICATION:"
+        echo "KIỂM TRA TRẠNG THÁI:"
         mysql -e "SHOW SLAVE STATUS\G" | grep -E "Slave_(IO|SQL)_Running|Seconds_Behind_Master"
-        
-        echo "--- KIỂM TRA QUYỀN USER IPTV TRÊN SLAVE ---"
-        mysql -e "SHOW GRANTS FOR 'iptv'@'%';"
-        echo "Lưu ý: Nếu 'Super_priv' là 'N' và chỉ có 'SELECT', user này sẽ bị chặn delete bởi read_only."
+        echo "Lưu ý: User 'iptv' đã có sẵn và sẽ chỉ có quyền ĐỌC trên máy này."
         ;;
 
     3)
