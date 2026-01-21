@@ -11,8 +11,8 @@ fi
 echo "==============================================="
 echo "    HỆ THỐNG CÀI ĐẶT MARIADB REPLICATION"
 echo "==============================================="
-echo "1. Cấu hình máy MASTER (192.168.88.151)"
-echo "2. Cấu hình máy SLAVE  (192.168.88.152)"
+echo "1. Cấu hình máy MASTER"
+echo "2. Cấu hình máy SLAVE"
 echo "3. Thoát"
 read -p "Lựa chọn của bạn (1-3): " CHOICE
 
