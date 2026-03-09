@@ -13,16 +13,16 @@ ssh-copy-id root@<IP_SERVER_2>
 
 ```
 settings {
-    logfile = "/var/log/lsyncd/lsyncd.log",
+    logfile = "/var/log/lsyncd/lsyncd.log", -- touch /var/log/lsyncd/lsyncd.log
     statusFile = "/var/log/lsyncd/lsyncd.status",
     nodaemon = false,
 }
 
 sync {
     default.rsyncssh,
-    source = "/file_upload",             -- Thư mục gốc trên Server 1
+    source = "/file_upload/",             -- Thư mục gốc trên Server 1
     host = "<IP_SERVER_2>",              -- IP của Server 2
-    targetdir = "/file_upload",          -- Thư mục đích trên Server 2
+    targetdir = "/file_upload/",          -- Thư mục đích trên Server 2
     delay = 1,                           -- Thời gian trễ (giây) trước khi sync
     rsync = {
         archive = true,
@@ -32,11 +32,21 @@ sync {
         -- binary = "/usr/bin/rsync", -- Bỏ comment nếu đường dẫn rsync khác mặc định
     },
     ssh = {
+        user = "USER_IP_SERVER_2", -- bỏ nếu dùng root
         port = 22 -- Đổi port nếu Server 2 dùng port SSH khác
     }
 }
 ```
 
+# Ubuntu
+
 ```sudo apt update```
 
 ```sudo apt install -y lsyncd```
+
+```sudo chown -R USER_IP_SERVER_2:USER_IP_SERVER_2 /file_upload/```
+
+# Debug
+```systemctl status lsyncd```
+
+```cat /var/log/lsyncd/lsyncd.log```
