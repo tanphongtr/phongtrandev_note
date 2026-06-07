@@ -46,6 +46,8 @@ sync {
 
 ```sudo chown -R USER_IP_SERVER_2:USER_IP_SERVER_2 /file_upload/```
 
+```vi /etc/lsyncd/lsyncd.conf.lua```
+
 # Debug
 ```systemctl status lsyncd```
 
