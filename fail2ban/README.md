@@ -2,6 +2,15 @@
 
 ```
 sudo apt install fail2ban
+
+systemctl restart fail2ban
+
+systemctl status fail2ban
+
+systemctl enable fail2ban
+
+fail2ban-client set nginx-gitlab unbanip 27.74.249.218
+fail2ban-client set nginx-gitlab banip 27.74.249.218
 ```
 
 # Fail2ban config
