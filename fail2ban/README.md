@@ -9,8 +9,21 @@ systemctl status fail2ban
 
 systemctl enable fail2ban
 
-fail2ban-client set nginx-gitlab unbanip 27.74.249.218
-fail2ban-client set nginx-gitlab banip 27.74.249.218
+fail2ban-client set nginx-gitlab unbanip 27.74.249.xxx
+fail2ban-client set nginx-gitlab banip 27.74.249.xxx
+
+fail2ban-regex /var/log/nginx/login.log /etc/fail2ban/filter.d/nginx-gitlab.conf
+```
+
+# Fail2ban Filter
+```
+vi /etc/fail2ban/filter.d/nginx-gitlab.conf
+```
+
+```
+[Definition]
+failregex = ^<HOST> - .* "POST /users/sign_in HTTP/.*"
+ignoreregex =
 ```
 
 # Fail2ban config
@@ -20,7 +33,7 @@ vi /etc/fail2ban/jail.local
 
 ```
 [DEFAULT]
-ignoreip = 127.0.0.1/8 ::1 27.74.249.218
+ignoreip = 127.0.0.1/8 ::1 27.74.249.xxx
 bantime  = 1h
 findtime = 10m
 maxretry = 5
