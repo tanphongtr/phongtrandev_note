@@ -17,3 +17,9 @@ EOF
 Step 3
 ```
 docker restart [mariadb_container_name]
+
+Step 4
+Vào Master phpmyadmin Replica, tạo username/password
+
+Step 5
+Trên server Replica tạo username/password với READONLY
